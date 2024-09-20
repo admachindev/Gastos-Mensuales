@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos Mensuales</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/jpg" href="/assets/img/Logo.png"/>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="img-container">
+                <img src="./assets/img/titulo.png" />
+            </div>
+            <div class="form-group">
+                <input type="number" id="valorMaximo" placeholder="Gasto maximo total mensual" min="0" step="50000">
+                <input type="text" id="nombreGasto" placeholder="Nombre del gasto">
+                <input type="number" id="valorGasto" placeholder="Valor del gasto" min="0" step="0.01">
+                <button id="botonFormulario" onclick="clickBoton();">Agregar Gasto</button>
+            </div>
+            <ul id="listaDeGastos"></ul>
+            <div class="botones">
+
+            </div>
+            <div class="total">
+                Total Mensual: COP$ <span id="totalGastos">0.00</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <img src="./assets/img/Logo.png">
+        Desarrollado por Adrian Manosalva
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
